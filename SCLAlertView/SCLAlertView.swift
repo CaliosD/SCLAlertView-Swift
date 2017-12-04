@@ -639,7 +639,7 @@ open class SCLAlertView: UIViewController {
     
     // showCustom(view, title, subTitle, UIColor, UIImage)
     @discardableResult
-    open func showCustom(_ title: String, subTitle: String, color: UIColor, icon: UIImage?, closeButtonTitle:String?=nil, timeout:SCLTimeoutConfiguration?=nil, colorStyle: UInt=SCLAlertViewStyle.success.defaultColorInt, colorTextButton: UInt=0xFFFFFF, circleIconImage: UIImage? = nil, animationStyle: SCLAnimationStyle = .topToBottom) -> SCLAlertViewResponder {
+    open func showCustom(_ title: String, subTitle: String, color: UIColor, icon: UIImage?=nil, closeButtonTitle:String?=nil, timeout:SCLTimeoutConfiguration?=nil, colorStyle: UInt=SCLAlertViewStyle.success.defaultColorInt, colorTextButton: UInt=0xFFFFFF, circleIconImage: UIImage? = nil, animationStyle: SCLAnimationStyle = .topToBottom) -> SCLAlertViewResponder {
         var red: CGFloat = 0, green: CGFloat = 0, blue: CGFloat = 0, alpha: CGFloat = 0
         
         color.getRed(&red, green: &green, blue: &blue, alpha: &alpha)
